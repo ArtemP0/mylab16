@@ -23,7 +23,6 @@ for keyword in keywords:
             histogram_data[url] = 0
     urls_list = list(histogram_data.keys())
     counts = list(histogram_data.values())
-    plt.figure(figsize=(10, 6))
     plt.barh(urls_list, counts, color='skyblue')
     plt.xlabel("Кількість появ")
     plt.ylabel("URL сайту")
